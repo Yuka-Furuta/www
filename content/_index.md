@@ -27,6 +27,20 @@ prefooter_cards = ["recruit/_index.md", "investor-relations/_index.md", "contact
 	宇宙用コンピュータモジュール
 
 	{% end %}
+	{% hero_content(
+		img="sc-obc_module_v1.png",
+		alt="",
+		link="@/products/_index.md",
+		link_text="Details",
+		img_link="",
+		bottom_title="SC-OBC Module V1",
+		hero_footer="PRODUCT 02 <br> Space computer module <br> for CubeSats"
+	) %}
+	高性能・高信頼性
+	<br>
+	次世代宇宙用コンピュータモジュール
+
+	{% end %}
 {% end %}
 
 
