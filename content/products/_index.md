@@ -35,3 +35,30 @@ card_body = """極限の環境でも
 	external_4_label="Zephyr RTOS GitHub Repository",
 	details_link="@/products/scobc_a1.md"
 ) }}
+
+<!-- linkはA1のもの -->
+{{ product_display(
+	product_id_label="Product 02",
+	bg="",
+	img="sc-obc_module_v1.png",
+	img_link="",
+	alt="",
+	pre_title="高性能・高信頼性 次世代宇宙用コンピュータモジュール",
+	title="SC-OBC Module V1",
+	subtitle="High performance, reliable, and versatile.",
+	text1_a="Main Processor",
+	text1_b="AMD Versal AI Edge Series VE2302",
+	text2_a="CPU",
+	text2_b="Cortex-A72 / Cortex-R5F / Microchip IGLOO2",
+	text3_a="Operating System",
+	text3_b="Zephyr RTOS",
+	external_1_link="https://spacecubics.github.io/sc-docs",
+	external_1_label="Space Cubics Documentation",
+	external_2_link="https://docs.zephyrproject.org/latest/boards/sc/scobc_a1/doc/index.html",
+	external_2_label="Zephyr Project Documentation",
+	external_3_link="https://github.com/spacecubics",
+	external_3_label="Space Cubics GitHub",
+	external_4_link="https://github.com/zephyrproject-rtos/zephyr",
+	external_4_label="Zephyr RTOS GitHub Repository",
+	details_link="@/products/scobc_v1.md"
+) }}
