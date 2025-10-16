@@ -1,0 +1,11 @@
+<div class="container">
+    <ul class="carousel">
+        <li class="item"><img src="/{{ img }}" alt="{{ alt | default(value='image') }}" /></li>
+        <li class="item"><img src="/{{ img2 }}" alt="{{ alt | default(value='image') }}" /></li>
+    </ul>
+    <!-- サポートされていないブラウザ向けメッセージ -->
+    <p class="message">
+        このカルーセルはお使いのブラウザでは「前へ・次へ」ボタン、インジケーター等がご利用いただけません。<br>
+        <code>::scroll-button()</code>、<code>::scroll-maker</code> 疑似要素がサポートされているブラウザでご覧ください。
+    </p>
+</div>

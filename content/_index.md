@@ -65,6 +65,25 @@ prefooter_cards = ["recruit/_index.md", "investor-relations/_index.md", "contact
 	{% end %}
 {% end %}
 
+
+{% hero_element(
+	bg="",
+	title="Test",
+	subtitle="Test message",
+	slogan="SUSTAINABLE GROWTH"
+) %}
+	{% carousel(
+		img="sc-obc_module_a1.png",
+		img2="sc-obc_module_v1.png",
+		alt="",
+		link="",
+		link_text="",
+		img_link=""
+	) %}
+	私たちは、限界に挑み続ける革新的企業の皆様と共に挑戦しています。
+	{% end %}
+{% end %}
+
 {% hero_element(
 	bg="",
 	title="OUR CUSTOMERS",
