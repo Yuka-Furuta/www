@@ -25,18 +25,16 @@ card_body = """極限の環境でも
 	text2_b="Cortex M3 / MicroBlaze-V",
 	text3_a="Operating System",
 	text3_b="Zephyr RTOS",
-	external_1_link="https://spacecubics.github.io/sc-docs",
-	external_1_label="Space Cubics Documentation",
-	external_2_link="https://docs.zephyrproject.org/latest/boards/sc/scobc_a1/doc/index.html",
-	external_2_label="Zephyr Project Documentation",
-	external_3_link="https://github.com/spacecubics",
-	external_3_label="Space Cubics GitHub",
-	external_4_link="https://github.com/zephyrproject-rtos/zephyr",
-	external_4_label="Zephyr RTOS GitHub Repository",
+	external_resources = [
+		["Space Cubics Documentation", "https://spacecubics.github.io/sc-docs"],
+		["Zephyr Project Documentation", "https://docs.zephyrproject.org/latest/boards/sc/scobc_a1/doc/index.html"],
+		["Space Cubics GitHub", "https://github.com/spacecubics"],
+		["Zephyr RTOS GitHub Repository", "https://github.com/zephyrproject-rtos/zephyr"]
+	],
 	details_link="@/products/scobc_a1.md"
 ) }}
 
-<!-- linkはA1のもの -->
+
 {{ product_display(
 	product_id_label="Product 02",
 	bg="",
@@ -52,13 +50,6 @@ card_body = """極限の環境でも
 	text2_b="Cortex-A72 / Cortex-R5F / Microchip IGLOO2",
 	text3_a="Operating System",
 	text3_b="Zephyr RTOS",
-	external_1_link="https://spacecubics.github.io/sc-docs",
-	external_1_label="Space Cubics Documentation",
-	external_2_link="https://docs.zephyrproject.org/latest/boards/sc/scobc_a1/doc/index.html",
-	external_2_label="Zephyr Project Documentation",
-	external_3_link="https://github.com/spacecubics",
-	external_3_label="Space Cubics GitHub",
-	external_4_link="https://github.com/zephyrproject-rtos/zephyr",
-	external_4_label="Zephyr RTOS GitHub Repository",
+	external_resources = [],
 	details_link="@/products/scobc_v1.md"
 ) }}
