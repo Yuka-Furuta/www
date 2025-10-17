@@ -16,7 +16,7 @@ prefooter_cards = ["recruit/_index.md", "investor-relations/_index.md", "contact
 	{% hero_content(
 		img="sc-obc_module_a1.png",
 		alt="",
-		link="@/products/_index.md",
+		link="@/products/_index.md#SC-OBC Module A1",
 		link_text="Details",
 		img_link="",
 		bottom_title="SC-OBC Module A1",
@@ -30,7 +30,7 @@ prefooter_cards = ["recruit/_index.md", "investor-relations/_index.md", "contact
 	{% hero_content(
 		img="sc-obc_module_v1.png",
 		alt="",
-		link="@/products/_index.md",
+		link="@/products/_index.md#SC-OBC Module V1",
 		link_text="Details",
 		img_link="",
 		bottom_title="SC-OBC Module V1",

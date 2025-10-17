@@ -16,7 +16,7 @@ prefooter_cards = ["recruit/_index.en.md", "investor-relations/_index.en.md", "c
 	{% hero_content(
 		img="sc-obc_module_a1.png",
 		alt="",
-		link="@/products/_index.md",
+		link="@/products/_index.md#SC-OBC Module A1",
 		link_text="Details",
 		img_link="",
 		bottom_title="SC-OBC Module A1",
