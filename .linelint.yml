@@ -4,6 +4,7 @@ autofix: false
 # list of paths to ignore, uses gitignore syntaxes (executes before any rule)
 ignore:
   - /.git
+  - "*.svg"
 
 rules:
   # checks if file ends in a newline character
