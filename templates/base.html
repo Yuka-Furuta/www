@@ -32,10 +32,77 @@
 		{% include "partials/footer.html" %}
 	{% endblock body %}
 
+	{% block cookie %}
+	<div id="cookie-banner" class="cookie-banner">
+		<p>
+			{% block cookie_text %}
+				{% if lang == "ja" %}
+					当サイトでは、サービス向上および安全なサイト運営のため Cookie を使用しています。<br>
+					当サイトを引き続きご利用いただくことで、Cookie の使用に同意いただいたものとみなします。
+					詳しくは
+					<a href="#" id="open-privacy-modal" class="cookie-link">Cookieについて</a>
+					をご確認ください。
+				{% else %}
+					This website uses cookies to improve our services and to ensure secure site operation.<br>
+					By continuing to use this website, you are deemed to have agreed to the use of cookies
+					in accordance. 
+					For more information, please refer to our 
+					<a href="#" id="open-privacy-modal" class="cookie-link">Cookie Notice</a>.
+				{% endif %}
+			{% endblock %}
+		</p>
+		<button id="cookie-accept" class="cookie-button-accept">
+			{% if lang == "ja" %}
+					同意する
+			{% else %}
+					Accept
+			{% endif %}
+		</button>
+		<button id="cookie-close" class="cookie-close" aria-label="Close cookie banner">&times;</button>
+	</div>
+
+	<div id="privacy-modal" class="privacy-modal">
+		<div class="privacy-modal-content">
+			<button class="privacy-close" aria-label="閉じる">&times;</button>
+			{% if lang == "ja" %}
+				<h2>Cookieについて</h2>
+				<div class="privacy-text">
+					<p>当サイトでは、サービスの品質向上および不正アクセス防止を目的として Cookie を使用しています。
+					Cookie はお客様のデバイスに保存される小さなデータであり、個人を特定できる情報を含みません。</p>
+					
+					<h3>必須Cookie</h3>
+					<p>当サイトの正常な動作のために必要な Cookie であり、無効にすることはできません。<br>
+					フォームの送信機能など、一部サービスの利用に必要となります。<br>
+					例：_cfuvid（Cloudflareによるセキュリティおよび Bot 防止のために使用）</p>
+					
+					<p>Cookie の利用設定は、ブラウザの設定から管理できます。<br>
+					また、当サイトを引き続きご利用いただいた場合、Cookie の使用に同意いただいたものとみなします。</p>
+				</div>
+			{% else %}
+				<h2>About Cookies</h2>
+				<div class="privacy-text">
+					<p>This website uses cookies to improve the quality of our services and to protect the website from unauthorized access.
+					Cookies are small files stored on your device and do not include any information that can personally identify you.</p>
+
+					<h3>Essential Cookies</h3>
+					<p>These cookies are required for the website to function properly and cannot be disabled.
+					They are necessary for using certain features, including form submissions.<br>
+					Example: _cfuvid (used by Cloudflare for security and bot protection)</p>
+
+					<p>You can manage your cookie preferences through your browser settings.
+					By continuing to use this website, you consent to the use of cookies.</p>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+	{% endblock%}
+
 	{% block scripts %}
 		<script src="{{ get_url(path='js/nav-toggle.js') }}"></script>
 		<script src="{{ get_url(path='js/nav-links.js') }}"></script>
 		<script src="{{ get_url(path='js/scroll-hint.js') }}"></script>
+		<script src="/js/cookie_banner.js"></script>
 	{% endblock scripts %}
 
 </body>
