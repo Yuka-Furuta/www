@@ -10,9 +10,7 @@
 		<div class="news-article-date">
 			<time datetime>{{ page.date | date(format=date_format) }}</time>
 		</div>
-		<div class="news-article-title">
-			{{ page.title }}
-		</div>
+		<h2 class="news-article-title">{{ page.title }}</h2>
 		<div class="news-article-content">
 			{{ page.content | safe }}
 		</div>
